@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas</title>
+         <!-- Libreria de P5.JS-->
+         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <!-- Libreria faker.js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.js"></script>
+
+    <!-- Sketch-->
+    <script src="JS/sketch.js"></script>
+
+</head>
+<body>
+    <script src="JS/datos.js"></script>
+
+    <div class="container">
+       
+    <div id="sketch"></div>
+
+        <table>
+            <tr>
+                <td> <b>Nombre:</b></td><td> <span id="nombre"></span></td>
+            </tr>
+            <tr>
+                <td> <b>Pais:</b></td> <td><span id="pais"></span></td>
+            </tr>
+            <tr>
+                <td> <b>Mes:</b></td> <td><span id="mes"></span></td>
+            </tr>
+        </table>
+        <span id="mostrarIndex"></span>
+        <input id="boton_atras" type="button" value="Atras" onclick="atras()">
+        <input id="boton_siguiente" type="button" value="Siguiente" onclick="siguiente()">
+
+    </div>
+   
+
+</body>
+</html>
